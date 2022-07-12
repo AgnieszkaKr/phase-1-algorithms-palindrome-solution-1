@@ -1,9 +1,35 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const revers = (word) =>{
+  let newWord = word.split('')
+  newWord = newWord.reverse()
+  newWord = newWord.join("")
+  return newWord
+  }
+
+const reverseWord = revers(word)
+
+  if (reverseWord === word){
+    return true
+  } else {
+    return false
+  }
+  
 }
+
+isPalindrome("aga")
 
 /* 
   Add your pseudocode here
+  make a function 
+    if word is palindrome
+      return true 
+    else 
+      false
+
+  mom => true
+  dad => true
+  book => false
 */
 
 /*
